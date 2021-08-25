@@ -336,17 +336,12 @@ def dumpdata_general(request, model):
         message = "fixtures from server " + str(datetime.datetime.now())
         os.system("git add " + path)
         os.system('git commit -m "' + message + '"')
-        os.system("git push origin dev")
+        os.system("git push ")
     # A backup dumpdata (with date in file name)
-    if "site-packages" in apps.get_app_config(application).path:
-        path = "fixtures/%s.json" % (
-            str(model.lower()) + "_" + str(datetime.date.today())
-        )
-    else:
-        path = "%s/fixtures/%s.json" % (
-            application,
-            str(model.lower()) + "_" + str(datetime.date.today()),
-        )
+    path = "%s/fixtures/%s.json" % (
+        application,
+        str(model.lower()) + "_" + str(datetime.date.today()),
+    )
     with open(path, "w") as f:
         management.call_command(
             "dumpdata", "%s.%s" % (application, model), stdout=f, indent=2
