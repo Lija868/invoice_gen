@@ -1,6 +1,6 @@
 Steps
 1. Clone the project
-2. activate the virtual environment (python -m venv venv)
+2. activate the virtual environment (python -m venv venv && source venv/bin/activate)
 3. install the requirements (pip install -r requirements.txt)
 4. replace the values in config.py.sample(db credentials)
 5. migrate commands 
