@@ -6,6 +6,7 @@ Steps
 5. migrate commands 
 
     python manage.py makemigrations
+    
     python manage.py migrate
 6. create super user
 
