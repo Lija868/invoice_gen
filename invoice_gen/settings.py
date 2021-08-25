@@ -150,7 +150,7 @@ DEFAULT_PASSWORD = config.DEFAULT_PASSWORD
 STATIC_URL = "/static/"
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
-BASIC_PDF_URL = "http://127.0.0.1:8000/media"
+BASIC_PDF_URL = "http://127.0.0.1:8000/media/"
 
 # Jwt configurations
 JWT_SECRET = config.JWT_SECRET
