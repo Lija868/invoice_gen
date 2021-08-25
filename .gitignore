@@ -1,0 +1,9 @@
+.idea/
+venv/
+*.pyc
+.DS_Store
+invoice_gen/static/
+config.py
+media/*
+debug.log
+/.pre-commit-config.yaml

@@ -1,0 +1,17 @@
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+<p>{{  warning }}</p>
+
+<form action="" method="POST">
+    <h3>Do you want to {{ action_string }} model "{{ model }}"?</h3>
+
+    {% csrf_token %}
+    {{ confirmation_form }}
+    <p><input type="submit" value="Confirm" /> <a href="../">Cancel</a></p>
+</form>

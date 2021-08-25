@@ -1,0 +1,26 @@
+DJANGO_SECRET_KEY = 'tkl5%=x%&_dm4by8k$vx@gu1k7q=)@bzl9&*ebx&m%f!lw3fqi'
+DEBUG = True
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'invoice',
+        'USER': 'postgres',
+        'PASSWORD': 'Passw0rd',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+}
+DEFAULT_PASSWORD = "Passw0rd1234!@#"
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+
+CORS_ORIGIN_ALLOW_ALL = True
+
+CORS_ORIGIN_WHITELIST = ['http://localhost']
+CORS_ORIGIN_REGEX_WHITELIST = ['http://localhost']
+
+JWT_SECRET = "gen_invoice125"
+AES_SECRET = "1a7ebef21b32bf3c607ba4059c459b85"
+AES_IV = "6f51b288dc31f8fa"
+JWT_ALGORITHM = "HS256"
+TOKEN_EXPIRY = 7200000  # 2 hr
+REFRESH_TOKEN_EXPIRY = 9000000  # 2.5 hr

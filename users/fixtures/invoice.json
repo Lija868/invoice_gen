@@ -1,0 +1,30 @@
+[
+{
+  "model": "users.invoice",
+  "pk": 1,
+  "fields": {
+    "user_id": 1,
+    "name": "abc",
+    "quantity": 10,
+    "unit_price": "15.00",
+    "tax": 1,
+    "discount": 10,
+    "created_at": "2021-08-25T12:14:14.090Z",
+    "updated_at": "2021-08-25T12:14:14.090Z"
+  }
+},
+{
+  "model": "users.invoice",
+  "pk": 2,
+  "fields": {
+    "user_id": 1,
+    "name": "absdc",
+    "quantity": 20,
+    "unit_price": "10.00",
+    "tax": 2,
+    "discount": 5,
+    "created_at": "2021-08-25T12:14:14.090Z",
+    "updated_at": "2021-08-25T12:14:14.090Z"
+  }
+}
+]
